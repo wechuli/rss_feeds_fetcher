@@ -6,8 +6,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
-	"rss_feeds/models"
-	"rss_feeds/rss"
+	
+	"github.com/wechuli/rss_feeds_fetcher/models"
+	"github.com/wechuli/rss_feeds_fetcher/rss"
 
 	"github.com/gorilla/mux"
 	_ "github.com/lib/pq"
