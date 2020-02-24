@@ -110,10 +110,10 @@ Package models implements types and functions related to reading and writing the
 
   ```GO
   type Feed struct {
-  `
-  `
-  `
-  `
+	Title       string `json:"title"`
+	Description string `json:"description"`
+	PubDate     string `json:"pubdate"`
+	Link        string `json:"link"`
   }
 
   ```
