@@ -1,17 +1,15 @@
-
-
 package rss
 
 import (
 	"errors"
 	"io/ioutil"
 	"net/http"
-	"github.com/wechuli/rss_feeds_fetcher/models"
 	"strings"
+
+	"github.com/wechuli/rss_feeds_fetcher/models"
 
 	"github.com/mmcdole/gofeed/rss"
 )
-
 
 // FetchRssFeedRaw downloads a raw rss website and returns a string representation
 func FetchRssFeedRaw(url string) (string, error) {
@@ -38,7 +36,7 @@ func ParseRawRssString(rawRssString string) ([]models.Feed, error) {
 	if err != nil {
 		return nil, err
 	}
-	
+
 	var feeds []models.Feed
 
 	for _, item := range rssFeed.Items {
