@@ -67,7 +67,7 @@ func respondWithError(w http.ResponseWriter, code int, message string) {
 	respondWithJSON(w, code, map[string]string{"error": message})
 }
 
-// searchFeeds -
+// searchFeeds - take a search term and perform a full text search on the database 
 func (a *App) searchFeeds(w http.ResponseWriter, r *http.Request) {
 
 	var s Search
