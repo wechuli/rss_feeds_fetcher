@@ -95,9 +95,10 @@ Package rss implements functions concerned with fetching and parsing rss feeds f
 
 - **`func ParseRawRssString`**
 
-      ```GO
-      func ParseRawRssString(rawRssString string) ([]models.Feed, error)
-      ```
+  ```GO
+
+    func ParseRawRssString(rawRssString string) ([]models.Feed, error)
+  ```
 
 `ParseRawRssString` receives a raw string rss website and parses it to extract the rss feeds represented in a convenient `Feed` struct, defined in the package `models`. It returns a slice of feeds extracted from the website.
 
@@ -109,10 +110,10 @@ Package models implements types and functions related to reading and writing the
 
   ```GO
   type Feed struct {
-	Title       string `json:"title"`
-	Description string `json:"description"`
-	PubDate     string `json:"pubdate"`
-	Link        string `json:"link"`
+  `
+  `
+  `
+  `
   }
 
   ```
