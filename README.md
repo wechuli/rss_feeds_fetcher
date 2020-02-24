@@ -97,6 +97,7 @@ Package rss implements functions concerned with fetching and parsing rss feeds f
 
       ```GO
       func ParseRawRssString(rawRssString string) ([]models.Feed, error)
+      ```
 
 `ParseRawRssString` receives a raw string rss website and parses it to extract the rss feeds represented in a convenient `Feed` struct, defined in the package `models`. It returns a slice of feeds extracted from the website.
 
